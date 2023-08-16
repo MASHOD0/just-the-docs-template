@@ -3,30 +3,67 @@ title: Home
 layout: home
 ---
 
-This is a *bare-minimum* template to create a Jekyll site that uses the [Just the Docs] theme. You can easily set the created site to be published on [GitHub Pages] – the [README] file explains how to do that, along with other details.
+# Guide-to-object-oriented-programing
+## Introduction
+**Object Oriented Programming (OOPs)** is a programming paradigm which uses [objects](https://en.wikipedia.org/wiki/Object_(computer_science)) and [classes](https://www.w3schools.com/python/python_classes.asp). The following are the core concepts behind OOPs.
+1. Abstraction
+2. Encapsulation
+3. Polymorphism
+4. Inheritance
+5. Association
+6. Composition
+7. Aggregation
+## Object 
+The object is an entity that has a state and behavior associated with it. It may be any real-world object like a mouse, keyboard, chair, table, pen, etc. Integers, strings, floating-point numbers, even arrays, and dictionaries, are all objects. More specifically, any single integer or any single string is an object. The number 12 is an object, the string “Hello, world” is an object, a list is an object that can hold other objects, and so on. You’ve been using objects all along and may not even realize it.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^1] And you will be able to deploy your local build to a different platform than GitHub Pages.
+An object consists of:
 
-More specifically, the created site:
+- State: It is represented by the attributes of an object. It also reflects the properties of an object.
+- Behavior: It is represented by the methods of an object. It also reflects the response of an object to other objects.
+- Identity: It gives a unique name to an object and enables one object to interact with other objects.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
 
-Other than that, you're free to customize sites that you create with this template, however you like. You can easily change the versions of `just-the-docs` and Jekyll it uses, as well as adding further plugins.
+To understand the state, behavior, and identity let us take the example of the class dog. 
+``` python
+class Dog:
+    pass
+```
 
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
+The identity can be considered as the name of the dog.
+State or Attributes can be considered as the breed, age, or color of the dog.
+The behavior can be considered as to whether the dog is eating or sleeping.
 
-To get started with creating a site, just click "[use this template]"!
+In python we come accross a lot of objects without knowing them a lot of the common data types like `int`, `str` and all are objects here is a simple experiment to find out 
+``` python
+>>> type('hello world')
+<class 'str'>
+>>> x = 5
+>>> type(x)
+<class 'int'>
+>>> y = 5.667
+>>> type(y)   
+<class 'float'>
+```
+[functions are also objects](/Objects/function_object.py)
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md#hosting-your-docs-from-an-existing-project-repo) in the template README.
+These are called builtin types and function differently from other objects.
 
-----
+## Methods
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+## Abstraction
+## Encapsulation
+## Polymorphism
+## Inheritance
+### Association
+### Composition
+### Aggregation
 
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[Jekyll]: https://jekyllrb.com
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## Recommended Reads and videos
+- [OOP In Python GFG](https://www.geeksforgeeks.org/python-oops-concepts/)
+- [OOP In 7 Minutes - Programming with Mosh](https://www.youtube.com/watch?v=PFmuCDHHpwk&pp=ygUZcHJvZ3JhbWluZyB3aXRoIG1vc2ggb29wcw%3D%3D)
+- [Python classes and objects - Socratica ](https://www.youtube.com/watch?v=apACNr7DC_s&pp=ygUZcHJvZ3JhbWluZyB3aXRoIG1vc2ggb29wcw%3D%3D)
+- [Python Object Oriented Programming for Beginners - Tech With Tim](https://www.youtube.com/watch?v=JeznW_7DlB0&t=659s&pp=ygUZcHJvZ3JhbWluZyB3aXRoIG1vc2ggb29wcw%3D%3D )
+### Not Completely Related but must go through
+- [SOLID PRINCIPLES IN PYTHON](https://www.youtube.com/watch?v=pTB30aXS77U&pp=ygUQYXJqYW4gY29kZXMgb29wcw%3D%3D)
+- [SOLID Relavence](https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html)
+
